@@ -1,0 +1,19 @@
+{
+
+  "description": "Adds an input to the top of API forms to filter the Namespaces, Enumerations, Classes, Interfaces, Type aliases, Variables, Functions, etc.",
+  "manifest_version": 2,
+  "name": "filterInput",
+  "version": "1.0",
+  "homepage_url": "https://github.com/boldbigflank/babylon-filter",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://doc.babylonjs.com/*"],
+      "js": ["filterInput.js"]
+    }
+  ]
+
+}
